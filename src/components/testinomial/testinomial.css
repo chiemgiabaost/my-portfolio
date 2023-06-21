@@ -1,9 +1,4 @@
-section{
-    height: 50rem;
-}
-
-@media screen and(max-width:600px) {
-    section{
-        height: 60rem;
-    }
-}
+div {
+    resize: both;
+    overflow: auto;
+  }
