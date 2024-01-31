@@ -11,12 +11,16 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    
+
     emailjs.sendForm('service_j1w0ry9', 'template_n1o3ttq', form.current, '9DAokDblWwxA8hjcv')
       .then((result) => {
         console.log(result.text);
+        console.log(e.target.value);
       }, (error) => {
         console.log(error.text);
       });
+     form.current.reset();
   };
 
   return (

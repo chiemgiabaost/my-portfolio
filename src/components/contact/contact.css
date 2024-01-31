@@ -4,7 +4,11 @@
     grid-template-columns: 30% 58%;
     gap: 12%;
 }
-
+section {
+    margin-top: 8rem;
+    height: 100vh;
+    
+}
 .contact__options {
     display: flex;
     flex-direction: column;
